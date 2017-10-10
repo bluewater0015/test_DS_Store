@@ -1,0 +1,286 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container .header{
+    background: #fee200;
+    color: #000;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.container .footer{
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+    background: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    color:#333333;
+}
+.main_container{
+    width: 100%;
+    height: 100%;
+    //background: #9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+/*招募合伙人模块*/
+.recruit{
+    width: 100%;
+    height: 375px;
+    position: relative;
+    background: url(../images/join/recruit.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.recruit_container{
+    width: 525px;
+    height: 235px;
+    border: 1px solid #fff;
+}
+.recruit_content{
+    width: 485px;
+    height: 190px;
+    background: rgba(255,255,255,0.5);
+}
+.advertiser{
+    font-size: 44px;
+    margin: 48px 0 34px 0;
+    font-family: PingFangSC-Regular;
+}
+/*表单模块*/
+/*公共模块*/
+.star {
+    color: red;
+    width: 10px;
+}
+.labels {
+    font-size: 18px;
+    color: #333;
+    padding: 0 20px 0 2px;
+}
+.tips_img{
+    width: 22px;
+    height: 22px;
+}
+.tips_content{
+    padding-left: 10px;
+    flex: 1;
+    height: 22px;
+}
+.tips{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    top: 0;
+    left: 565px;
+    display: flex;
+    visibility: hidden;
+    padding: 14px 0;
+}
+.tips_box{
+    width: 22px;
+    height: 22px;
+    //display: inline-block;
+}
+/*所有输入框*/
+.input{
+    font-size: 14px;
+    color: #666;
+    width: 451px;
+    height: 48px;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+/*姓名：*/
+.name,.phone{
+    width: 572px;
+    position: relative;
+}
+.name_box{
+    width: 100%;
+}
+.username_box{
+    width: 469px;
+    height: 48px;
+    //background: #f99;
+    //padding: 9px;
+    border: 1px solid #ccc;
+}
+// .name_tips{
+//     height: 32px;
+//     font-size: 14px;
+//     color: #999;
+//     position: absolute;
+//     left: 572px;
+//     display: flex;
+//     visibility: hidden;
+// }
+.phone .phone_tips{
+    visibility: hidden;
+}
+.mail_tips{
+    visibility: hidden;
+}
+
+.remark_tips{
+    visibility: hidden;
+}
+/*省和市*/
+.province_box{
+    width: 471px;
+}
+.province{
+    width: 217px;
+    height: 48px;
+    //color: #999;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding-right: 9px;
+}
+.select_province{
+    width: 80px;
+    color: #999;
+    font-size: 14px;
+}
+.province_content{
+    flex: 1;
+}
+.province_content .cmbProvince {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    color: #666;
+}
+.select_city{
+    color: #999;
+    font-size: 14px;
+    width: 80px;
+}
+.city_content {
+    flex: 1;
+}
+.city_content .cmbCity {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    color: #666;
+}
+.city{
+    width: 217px;
+    height: 48px;
+    //color: #999;
+    background: #fff;
+    border: 1px solid #ccc;
+    //flex: 1;
+    padding-right: 9px;
+}
+select{
+    border: 0;
+    background: #fff;
+    outline: none;
+}
+// .select_area{
+//     width: 120px;
+// }
+/*备注*/
+.remark {
+    position: relative;
+}
+.remark .font_tips {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.remark .remark_text{
+    width: 471px;
+    height: 169px;
+    padding: 5px;
+    box-sizing: border-box; 
+    outline: none;
+}
+.usermail{
+    width: 300px;
+}
+.xt_submit {
+    margin: 58px 0 120px 0;
+}
+.submit{
+    width: 290px;
+    height: 60px;
+    background: #ffd801;
+    border-radius: 5px;
+    color: #ffffff;
+}
+/*成功提交的遮罩层*/
+.success_submit{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #f99;
+    display: none;
+    z-index: 1002;
+}
+/*遮罩层*/
+.shade{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    //right: 0;
+    //bottom: 0;
+    left: 0;
+    //margin: auto;
+    background: #000;
+    opacity: 0.7;
+    display: none;
+    z-index: 1001;
+}
+/*提交不成功的遮罩层*/
+.again_submit{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #f99;
+    display: none;
+    z-index: 1002;
+}
+/*关闭*/
+.close{
+    width: 100:%;
+    height: 30px;
+    background: red;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+
+
+.joins_container{
+	width: 100%;
+	height: 100%;
+	//display: flex;
+	//flex-direction: column;
+}
+.header{
+	height: 80px;
+}
+.footer{
+	height: 100px;
+}
+.success_container{
+	margin-top: 114px;
+	height: 500px;
+	//flex: 1;
+    width: 100%;
+    //height: 100%;
+    background: url(../images/joins/joins_background.png) no-repeat;
+   	background-size: 100% 100%;
+}
+.sucessImg_content {
+	width: 500px;
+}
+.successImg_box{
+	width: 210px;
+	height: 210px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.apply_success{
+	padding: 65px 0 10px 0;
+	font-size: 24px;
+	color: #333;
+}
+.work_return{
+	font-size: 20px;
+	color: #666;
+}
+
+
+
+
+
+
